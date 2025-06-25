@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       docker_images:
-        description: 'grafana/grafana-oss:12.0.1-security-01-ubuntu'
+        description: '请填写docker镜像名称 多个用英文逗号分开'
         required: true
-        default: 'grafana/grafana-oss:12.0.1-security-01-ubuntu'  # 设置默认的 Docker 镜像列表
+        default: 'alpine:latest,alpine/curl,busybox:stable-glibc'  # 设置默认的 Docker 镜像列表
 
 jobs:
   pull_and_package:
